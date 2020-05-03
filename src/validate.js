@@ -7,9 +7,14 @@ import {
     min
 } from 'vee-validate/dist/rules';
 
-extend('latin', {
-    validate: (value) => /^[A-z]+$/.test(value),
-    message: 'Только латинские буквы'
+extend('startLatin', {
+    validate: (value) => /^[A-z].*$/.test(value),
+    message: 'Первый символ должен быть латинской буквой'
+});
+
+extend('login', {
+    validate: (value) => /^[A-z0-9]+$/.test(value),
+    message: 'Только латинские буквы и числы'
 });
 
 extend('required', {

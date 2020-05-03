@@ -6,7 +6,7 @@
                 <form @submit.prevent="onSubmit">
                     <ValidationProvider
                         v-slot="{ errors }"
-                        rules="required|latin|min:3"
+                        rules="required|startLatin|login|min:3"
                         class="form-group"
                         tag="div"
                     >
