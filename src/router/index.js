@@ -20,5 +20,5 @@ router.beforeEach((to, from, next) => {
     ) {
         return isAuthorized ? next('/') : next();
     }
-   return isAuthorized ? next() : next('/login');
+    return isAuthorized ? next() : next('/login');
 })

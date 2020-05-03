@@ -1,3 +1,5 @@
+import NotFound from '../components/NotFound.vue';
+
 export const routes = [
     {
         path: '/',
@@ -47,5 +49,10 @@ export const routes = [
         name: "edit",
         meta: { isTaskPage: true },
         component: () => import("../components/TaskEdit.vue")
+    },
+    {
+        path: '*',
+        name: 'no',
+        component: NotFound
     }
 ]
