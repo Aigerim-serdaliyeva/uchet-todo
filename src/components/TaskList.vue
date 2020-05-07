@@ -9,7 +9,6 @@
                     :id="task.id"
                     :title="task.title"
                     :text="task.text"
-                    :duration="task.duration"
                 />
             </div>
         </div>
@@ -18,7 +17,6 @@
 </template>
 
 <script>
-
 
 import Task from './Task.vue'
 
